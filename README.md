@@ -3,7 +3,7 @@
 ## Introduction
 This project aims to extend the use of the linear regression house valuation model to analyze housing data from Boston, Massachusetts, particularly around various attributes for the homes observed in the area and their prices using multiple algorithms.
 
-This project will scope, analyze, prepare, plot data, and seek to explain the findings from the analysis.
+This project will scope, analyze, prepare, and seek to explain the findings from the analysis.
 
 Here are some questions that this project seeks to answer:
 
@@ -37,4 +37,12 @@ price through multiple inputs (independent variables). This is an appropriate ta
 The same data used to train the regularized linear regression model will be employed. It is a CSV file containing more than 506 anonymized real estate transactions in Boston, Massachusetts. 
 
 ## Conclusions
-TBD
+
+Here are some questions that this project sought to answer:
+
+- Can an alternative cost minimization approach such as **gradient descent** be utilized to reduce training duration?
+    - Absolutely, utilizing a cost minimization strategy like gradient descent can help decrease training duration, in broad terms. The SGD model is likely to need less time for fitting, particularly when dealing with extensive datasets. 
+
+  
+- How does this approach affect the mean squared error(MSE)?
+    - By greatly decreasing the learning rate, the SGD model gets closer to the closed-form solution in terms of effectively reducing the error. Modifying the learning rate for the SGD model further will not lead to an error level that is lower than that of the closed-form solution, though. The core of a closed-form solution is that it determines the model that most successfully minimizes the cost function. While iterative methods can get near to the value, they cannot surpass it.
